@@ -64,11 +64,11 @@ cTimerEvent *CreateTimerEvent(TCLASS *c, TRESULT (TCLASS::*fp)(TARG1),
                               unsigned int TimeoutMs);
 template<class TCLASS>
 cTimerEvent *CreateTimerEvent(TCLASS *c, void (TCLASS::*fp)(void),
-                              unsigned int TimeoutMs, bool runOnce = true);
+                              unsigned int TimeoutMs, bool runOnce);
 template<class TCLASS, class TARG1>
 cTimerEvent *CreateTimerEvent(TCLASS *c, void (TCLASS::*fp)(TARG1),
                               TARG1 arg1,
-                              unsigned int TimeoutMs, bool runOnce = true);
+                              unsigned int TimeoutMs, bool runOnce);
 
 //
 // Timer event templates
